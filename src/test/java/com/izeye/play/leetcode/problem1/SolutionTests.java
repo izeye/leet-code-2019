@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SolutionTests {
 
 	@Test
-	public void test() {
+	public void twoSum() {
 		int[] nums = { 2, 7, 11, 15 };
 		int target = 9;
 
