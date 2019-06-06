@@ -11,6 +11,8 @@ package com.izeye.play.leetcode.problem2;
  *     ListNode next;
  *     ListNode(int x) { val = x; }
  * }
+ *
+ * @author Johnny Lim
  */
 class Solution {
 
