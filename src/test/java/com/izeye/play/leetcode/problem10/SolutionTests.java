@@ -30,6 +30,7 @@ public class SolutionTests {
 		assertThat(solution.isMatch("ab", ".*c")).isFalse();
 		assertThat(solution.isMatch("aaa", "a*a")).isTrue();
 		assertThat(solution.isMatch("aaa", "ab*a*c*a")).isTrue();
+		assertThat(solution.isMatch("bbbba", ".*a*a")).isTrue();
 	}
 
 }
