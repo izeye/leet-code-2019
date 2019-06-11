@@ -20,13 +20,13 @@ public class SolutionTests {
 		l1.next.next = new ListNode(3);
 		l1.next.next.next = new ListNode(4);
 
-		ListNode merged = solution.swapPairs(l1);
+		ListNode swapped = solution.swapPairs(l1);
 
-		assertThat(merged.val).isEqualTo(2);
-		assertThat(merged.next.val).isEqualTo(1);
-		assertThat(merged.next.next.val).isEqualTo(4);
-		assertThat(merged.next.next.next.val).isEqualTo(3);
-		assertThat(merged.next.next.next.next).isNull();
+		assertThat(swapped.val).isEqualTo(2);
+		assertThat(swapped.next.val).isEqualTo(1);
+		assertThat(swapped.next.next.val).isEqualTo(4);
+		assertThat(swapped.next.next.next.val).isEqualTo(3);
+		assertThat(swapped.next.next.next.next).isNull();
 	}
 
 	@Test
@@ -37,12 +37,12 @@ public class SolutionTests {
 		l1.next = new ListNode(2);
 		l1.next.next = new ListNode(3);
 
-		ListNode merged = solution.swapPairs(l1);
+		ListNode swapped = solution.swapPairs(l1);
 
-		assertThat(merged.val).isEqualTo(2);
-		assertThat(merged.next.val).isEqualTo(1);
-		assertThat(merged.next.next.val).isEqualTo(3);
-		assertThat(merged.next.next.next).isNull();
+		assertThat(swapped.val).isEqualTo(2);
+		assertThat(swapped.next.val).isEqualTo(1);
+		assertThat(swapped.next.next.val).isEqualTo(3);
+		assertThat(swapped.next.next.next).isNull();
 	}
 
 	@Test
@@ -51,10 +51,10 @@ public class SolutionTests {
 
 		ListNode l1 = new ListNode(1);
 
-		ListNode merged = solution.swapPairs(l1);
+		ListNode swapped = solution.swapPairs(l1);
 
-		assertThat(merged.val).isEqualTo(1);
-		assertThat(merged.next).isNull();
+		assertThat(swapped.val).isEqualTo(1);
+		assertThat(swapped.next).isNull();
 	}
 
 }
